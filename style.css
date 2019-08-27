@@ -32,6 +32,7 @@ body {
     display: block;
     position: relative;
     text-align: center;
+    text-decoration: none;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -163,7 +164,7 @@ body {
     font-family: "PlayfairDisplay", serif;
     font-weight: bold;
     line-height: 30px;
-    text-align: left;
+    /* text-align: left; */
    
     margin-top: 330px;
   }
@@ -174,7 +175,7 @@ body {
     font-family: "PlayfairDisplay", serif;
     font-weight: bold;
     line-height: 50px;
-    text-align: left;
+    /* text-align: left; */
     /* margin-left: 1px; */
 
     /* -moz-transform: matrix( 1.02010968921389,0,0,1,0,0);
@@ -240,7 +241,7 @@ body {
     padding: 13px 12px;
     
     font: inherit;
-    text-align: left;
+    /* text-align: left; */
 
     background-color: #0d2e69;
     border: 1px solid #cccccc;
@@ -291,13 +292,71 @@ body {
   .feedback textarea:focus:-moz-placeholder {color: transparent;}/* Firefox 18- */
   .feedback textarea:focus:-ms-input-placeholder {color: transparent;}
 
+  section.about {
+    background-color: white;
+    margin: 146px auto 70px;
+  }
+    
+  .grid-about {
+    display: grid;
+    grid-template-columns: 2fr 40px 1fr 1fr;
+    grid-template-rows: 68px 283px 49px 127px;
+  }
 
-  
+  .grid-about img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    
+    width: 558px;
+    height: 527px;
+  }
 
+  .grid-about h2 {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;  
+    
+    margin-top: 0;
+    margin-bottom: 0;
 
+    font-size: 50px;
+    font-family: "PlayfairDisplay", serif;
+    font-weight: bold;
+    line-height: 33px;
+    color: rgb(64, 64, 64);
+   }
 
+  .grid-about p {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
 
-  /* .feedback h3 {
+    margin-top: 0px;
+
+    font-size: 18px;
+    color: rgb(21, 21, 21);
+    line-height: 25px;
+  }
+
+  .grid-about h3 {
+    grid-column: 3 / 5 ;
+    grid-row: 3 / 4;
+     
+    margin-top: 0px;
+    margin-bottom: 0;
+
+    font-size: 21px;
+    font-family: "PlayfairDisplay";
+    color: rgb(64, 64, 64);
+    font-weight: bold;
+  }
+
+  .grid-about .btn {
+    grid-column: 3 / 4 ;
+    grid-row: 4 / 5;
+    
+    margin-top: 0;
+    
+    width: 170px;
+    height: 17px;
+  }
  
-  } */
 }
