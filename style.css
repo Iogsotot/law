@@ -52,16 +52,19 @@ body {
 
   .header-logo {
     float: left;
-    font-size: 36px;
-    /* color: rgb(13, 46, 105); */
-    background-color: white;
-    font-weight: bold;
-    line-height: 80px;
-    text-align: center;
+  
     vertical-align: middle;
     width: 170px;
     height: 80px;
+
+    background-color: white;
     border: 3px solid rgb(13, 46, 105);
+    cursor: pointer;
+
+    font-size: 36px;  
+    font-weight: bold;
+    line-height: 80px;
+    text-align: center;    
   }
 
   .header-top-phone {
@@ -72,10 +75,12 @@ body {
   }
 
   .header-top-phone div {
-     width: 282px;
+    width: 282px;
     font-size: 14px;
     line-height: 15px;
     text-align: right;
+
+    cursor: default;
   }
 
   .header-top-phone div a {
@@ -97,7 +102,7 @@ body {
     width: 872px;
 
     list-style: none;
-    font-weight: 300;
+    /* font-weight: 300; */
   }
 
   .header-nav li {
@@ -110,19 +115,23 @@ body {
   }
 
   .header-nav a {
+    cursor: pointer;
     text-decoration: none;
-    font-weight: bolder;
     color: inherit;
   }
 
-  /* .header-nav a:hover {
+  .header-nav a:hover {
+    /* transition: 0.3s; */
     text-decoration: underline;
+    text-shadow: 0 0 .5px #0d2e69, 0 0 .6px #0d2e69, 0 0 .6px #0d2e69; 
+    /* font-weight: bolder; */
+    /* filter: drop-shadow(0px 0px 2px rgb(13, 46, 105)); */
   }
   
   .header-nav a:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(13, 46, 105, 0.5);
     text-decoration: underline;
-  } */
+  }
 
   .header-main {
     display: flex;
@@ -167,6 +176,8 @@ body {
     line-height: 30px;
       
     margin-top: 330px;
+
+    cursor: default;
   }
 
   .promo a .XL {
@@ -177,6 +188,8 @@ body {
     font-family: "PlayfairDisplay", serif;
     font-weight: bold;
     line-height: 54px;
+
+    cursor: default;
     /* margin-left: 1px; */
 
     /* -moz-transform: matrix( 1.02010968921389,0,0,1,0,0);
@@ -187,6 +200,17 @@ body {
   .promo .btn {
     margin-top: 39px;
     max-width: 330px;
+  }
+
+  .promo .btn:hover { 
+    transition: 0.3s;
+    background-color: white;
+    color: #0d2e69;
+  }
+
+  .promo .btn:active { 
+    color: rgba(13, 46, 105, 0.6);
+    box-shadow: 3px 3px 3px 0px rgba(13, 46, 105, 0.2) inset;
   }
 
   .feedback {
@@ -201,11 +225,6 @@ body {
     margin: 163px auto 141px;
   }
 
-  .feedback h3 {
-    margin: 0;
-    padding: 0;
-  }
-
   .feedback .section-title {
     margin: 0px;
     margin-bottom: 4px;
@@ -214,7 +233,8 @@ body {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-    word-wrap: normal;
+    
+    cursor: default;
   }
   
   .feedback .feedback-tip {
@@ -225,6 +245,8 @@ body {
     font-weight: lighter;
     line-height: 31px;
     text-align: center;    
+
+    cursor: default;
   }
 
   .feedback form {
@@ -263,6 +285,13 @@ body {
 
     width: 264px;
     margin: 20px auto 46px;
+
+    cursor: pointer;
+  }
+
+  .feedback input[type=submit]:active { 
+    color: rgba(13, 46, 105, 0.6);
+    box-shadow: 3px 3px 3px 0px rgba(13, 46, 105, 0.2) inset;
   }
 
   .feedback input::-webkit-input-placeholder {color: #cccccc;
@@ -324,6 +353,8 @@ body {
     font-weight: bold;
     line-height: 33px;
     color: rgb(64, 64, 64);
+
+    cursor: default;
    }
 
   .grid-about p {
@@ -336,6 +367,8 @@ body {
     font-weight: 300;
     color: rgb(21, 21, 21);
     line-height: 25px;
+
+    cursor: default;
   }
 
   .grid-about h3 {
@@ -349,6 +382,8 @@ body {
     font-family: "PlayfairDisplay";
     color: rgb(64, 64, 64);
     font-weight: bold;
+
+    cursor: default;
   }
 
   .grid-about .btn {
@@ -360,7 +395,18 @@ body {
     width: 170px;
     height: 19px;
   }
- 
+
+  .grid-about .btn:hover { 
+    transition: 0.3s;
+    background-color: #061735;
+    color: white;
+  }
+
+  .grid-about .btn:active { 
+    background-color: #1a55bd;
+    box-shadow: 3px 3px 3px 0px rgba(255, 255, 255, 0.4) inset;
+  }
+   
   section.call-now {
     background-color: #0d2e69;
   }
@@ -368,6 +414,11 @@ body {
   .call-now .container {
     padding-top: 56px;
     padding-bottom: 57px;
+    cursor: default;
+  }
+
+  .call-now .container a {
+    cursor: pointer;
   }
 
   .call-now, .call-now .call-now-phone {
@@ -389,6 +440,8 @@ body {
     z-index: 1;
     position: relative;
     background-size: cover;
+
+    cursor: default;
   }
 
   section.reviews::before {
@@ -448,8 +501,9 @@ body {
     display: inline-block;
     margin: 0;
     padding: 8px 8px;
-  
   }
+
+  
 
   .btn-case a:first-of-type {
     margin-right: 5px;
@@ -471,8 +525,30 @@ body {
     border-bottom: 2px solid white;
   }
 
+  .btn-case .btn:hover { 
+    transition: 0.3s;
+    background-color: white;
+    }
+
+  .btn-case .btn:hover .left-arrow, 
+  .btn-case .btn:hover .right-arrow  { 
+    transition: 0.3s;
+    border-color: #0d2e69;
+  }
+
+
+  .btn-case .btn:active { 
+    box-shadow: 3px 3px 3px 0px rgba(13, 46, 105, 0.2) inset;
+  }
+
+  .btn-case .btn:active .left-arrow, 
+  .btn-case .btn:active .right-arrow { 
+    border-color: rgba(13, 46, 105, 0.6);
+    }
+
   .news-and-articles {
     background-color: white;
+    cursor: default;
   }
 
   .articles-grid {
@@ -539,14 +615,22 @@ body {
     font-weight: bold;
 
     text-decoration: none;
+    cursor: pointer;
   }
 
-  /* article a:hover {}
+  article a:hover {
+    transition: 0.3s;
+    text-decoration: underline;
+  }
 
-  article a:active {} */
+  article a:active {
+    color: rgba(13, 46, 105, 0.5);
+    text-decoration: underline;
+  } 
 
   footer {
     background-color: #2b2b2b;
+    cursor: default;
   }
 
   .footer-top {
@@ -611,6 +695,16 @@ body {
     border-right: 2px solid white;
    }
 
+   .footer-menu li:hover {
+    text-shadow: 0 0 .9px white, 0 0 .9px white, 0 0 .9px white; 
+    /* font-weight: bold; */
+    /* transition: 0.3s; */
+   }
+
+   .footer-menu li:active a{
+    color: rgba(255, 255, 255, 0.2);
+   }
+
    .footer-bottom .footer-copyright {
      float: right;
      font-weight: 300;
@@ -619,6 +713,7 @@ body {
    footer a {
      text-decoration: none;
      color: white;
+     cursor: pointer !important;
    }
 
 }
