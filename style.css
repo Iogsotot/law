@@ -209,7 +209,6 @@ body {
     position: relative;
     z-index: 2;
     width: 397px;
-    height: 496px;
     background-color: #0d2e69;
     padding: 38px 32px 25px;
 
@@ -273,7 +272,7 @@ body {
     font-weight: bold;
 
     width: 264px;
-    margin: 20px auto 46px;
+    margin: 20px auto 26px;
 
     cursor: pointer;
   }
