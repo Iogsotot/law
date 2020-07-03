@@ -344,7 +344,8 @@ body {
 
   section.about {
     background-color: white;
-    margin: 146px auto 70px;
+    margin: 120px auto 70px;
+    padding-top: 26px;
   }
 
   .grid-about {
